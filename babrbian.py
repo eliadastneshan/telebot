@@ -10,10 +10,10 @@ def welcome (message):
     if message.chat.id not in user_ID:
         user_ID.append(message.chat.id)
 
-@bot.message_handler(commands=['خرید'])
+@bot.message_handler(commands=['دیدن لیست'])
 def send_update(message):
     for id in user_ID:
-        bot.send_message (id,'ربات آماده سفارش است')
+        bot.send_message (id,'لیست اجناس')
 
 
 
